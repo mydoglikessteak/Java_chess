@@ -1,7 +1,7 @@
 package application;
 import BoardGame.Position;
 import chess.ChessMatch;
-public class main {
+public class Main {
 
     public static void main(String[] args) {
 
