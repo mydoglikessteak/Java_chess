@@ -7,10 +7,5 @@ public class Main {
 
         ChessMatch  chessmatch = new ChessMatch();
         UI.printBoard(chessmatch.getPieces());
-
-
     }
-
-    
-    
 }
