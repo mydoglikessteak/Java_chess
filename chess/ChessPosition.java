@@ -1,5 +1,7 @@
 package chess;
 
+import BoardGame.Position;
+
 public class ChessPosition {
 
     private char collumn;
@@ -25,5 +27,18 @@ public class ChessPosition {
         }
         this.collumn = collumn;
         this.row = row;
+    }
+
+    protected Position ToPosition(){
+        return new Position(8- row,collumn-'a');
+    }
+
+    protected static ChessPosition fromPosition(Position position){
+        return  new ChessPosition((char)('a' - position.getColumn()),8 - position.getRow());
+    }
+
+    @Override
+    public String toString(){
+        return "" + collumn + row;
     }
 }
